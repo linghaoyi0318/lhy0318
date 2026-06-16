@@ -13,11 +13,12 @@
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #ffffff;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 20px;
         }
         
         .container {
@@ -27,6 +28,7 @@
             border-radius: 10px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
             max-width: 600px;
+            width: 100%;
         }
         
         h1 {
@@ -39,6 +41,26 @@
             color: #666;
             line-height: 1.6;
             margin-bottom: 30px;
+        }
+        
+        .music-player {
+            margin: 40px 0;
+            padding: 20px;
+            background: #f5f5f5;
+            border-radius: 10px;
+        }
+        
+        .music-player h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        audio {
+            width: 100%;
+            max-width: 400px;
+            height: 40px;
+            cursor: pointer;
         }
         
         .btn {
@@ -62,6 +84,15 @@
         <h1>lhy的测试</h1>
         <p>GitHub Pages网站</p>
         <p>网站地址：<code>https://linghaoyi0318.github.io/lhy0318</code></p>
+        
+        <div class="music-player">
+            <h3>🎵 播放音乐</h3>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                你的浏览器不支持音频播放
+            </audio>
+        </div>
+        
         <a href="https://github.com/linghaoyi0318/lhy0318" class="btn">查看 GitHub 仓库</a>
         <a href="#" class="btn">更多信息</a>
     </div>
